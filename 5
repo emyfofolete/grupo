@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function gerenciarTarefas(listaDeTarefas, acao){
+    if (acao === "adicionar"){
+        let descricao = prompt("Insira uma descrição para tarefa");
+        listaDeTarefas.push({descricao : descricao, concluida : false});
+    } else if (acao === "remover"){
+        // ...
+    }
+    return listaDeTarefas;
+ }
+
+let tarefas = [
+    {descricao: "Malhar", concluida: false},
+    {descricao: "Estudar", concluida: false},
+    {descricao: "Trabalhar", concluida: false},
+];
+
+gerenciarTarefas(tarefas, "listar"); 
+gerenciarTarefas(tarefas, "adicionar"); 
+gerenciarTarefas(tarefas, "remover"); 
+
+    </script>
+</body>
+</html>
